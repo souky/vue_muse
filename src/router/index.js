@@ -1,8 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import axios from 'axios'
-// 组件
-import Index from '@/components/Index'
+// 主页面
+import Index from '@/views/index'
+
+// 子页面
+import Login_user from '@/views/login/login_user'
+
 
 
 
@@ -16,9 +20,13 @@ var router = new Router({
 			path: '/',
 			name: '首页',
 			component: Index,
-			// meta: {
-			// 	requireAuth: true
-			// }
+			children:[
+				{
+					path: '/login',
+					name: '首页',
+					component: Login_user,
+				}
+			]
 		},
 
 
