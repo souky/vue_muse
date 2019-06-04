@@ -1,7 +1,7 @@
 {
-  "name": "clockSystem",
+  "name": "mobile_muse",
   "version": "1.0.0",
-  "description": "A Vue.js project",
+  "description": "A mobile_muse project",
   "author": "souky",
   "private": true,
   "scripts": {
