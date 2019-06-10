@@ -183,6 +183,20 @@ Vue.prototype.$unbind = function(data){
 	return JSON.parse(JSON.stringify(data));
 }
 
+// 防止鼠标连点效果
+Vue.directive('noMoreClick', {
+  inserted(el, binding) {
+    el.addEventListener('click', e => {
+      el.classList.add('is-disabled');
+      el.disabled = true;
+      setTimeout(() => {
+        el.disabled = false;
+        el.classList.remove('is-disabled');
+      }, 2000)
+    })
+  }
+})
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
