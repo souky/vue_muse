@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="">
+  <div class="mainBody">
     <mu-container>
       <mu-text-field label="姓名" @blur="vName()" :error-text="errorMsg.userName" v-model="userscore.userName" label-float full-width ></mu-text-field>
       <mu-text-field label="年龄" @blur="vAge()" :error-text="errorMsg.userAge" v-model="userscore.userAge" label-float full-width></mu-text-field>
