@@ -10,3 +10,8 @@ img{
   padding-bottom:1px!important;
   margin-bottom: 3px!important;
 }
+
+#index{
+  max-width:1024px;
+  margin: auto;
+}
